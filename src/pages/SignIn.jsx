@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import OAuth from "../components/OAuth";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
@@ -66,7 +66,7 @@ export default function SignIn() {
                 placeholder="Password"
                 className="w-full px-4 py-2 text-xl !text-gray-700 !bg-white border-gray-300 rounded transition ease-in-out"
               ></input>
-              {/* {showPassword ? (
+              {showPassword ? (
                 <AiFillEyeInvisible
                   className="absolute right-3 top-3 text-xl cursor-pointer"
                   onClick={() => setShowPassword((prevState) => !prevState)}
@@ -76,7 +76,7 @@ export default function SignIn() {
                   className="absolute right-3 top-3 text-xl cursor-pointer"
                   onClick={() => setShowPassword((prevState) => !prevState)}
                 />
-              )} */}
+              )}
             </div>
             <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg">
               <p className="mb-6">
